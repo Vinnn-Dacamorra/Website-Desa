@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Resmi Desa Sukamakmur - Portal Informasi, Layanan, dan Transparansi Pemerintahan Desa">
+    <meta name="keywords" content="desa, pemerintahan desa, layanan publik, transparansi">
+    <title>Desa Sukamakmur - Portal Resmi Pemerintah Desa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <p>Memuat...</p>
+        </div>
+    </div>
+    
+    <!-- Script untuk hide preloader cepat -->
+    <script>
+        // Hide preloader setelah DOM ready
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const preloader = document.querySelector('.preloader');
+                if (preloader) {
+                    preloader.style.opacity = '0';
+                    preloader.style.visibility = 'hidden';
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }
+            }, 500);
+        });
+        
+        // Backup: Hide setelah 2 detik maksimal
+        setTimeout(function() {
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.style.display = 'none';
+            }
+        }, 2000);
+    </script>
+
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <div class="container">
+            <marquee>📢 Selamat datang di Portal Resmi Desa Sukamakmur | Info terbaru: Musyawarah Desa akan dilaksanakan tanggal 25 Januari 2026 | Layanan administrasi online tersedia 24/7</marquee>
+        </div>
+    </div>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +62 812-3456-7890</span>
+                    <span><i class="fas fa-envelope"></i> info@sukamakmur.desa.id</span>
+                    <span><i class="fas fa-clock"></i> Senin - Jumat: 08.00 - 16.00 WIB</span>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <img src="https://via.placeholder.com/80x80/2c5aa0/ffffff?text=LOGO" alt="Logo Desa" class="logo">
+                    <div class="logo-text">
+                        <h1>Desa Sukamakmur</h1>
+                        <p>Kec. Cianjur Selatan, Kab. Cianjur, Jawa Barat</p>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#beranda" class="active">Beranda</a></li>
+                        <li class="dropdown">
+                            <a href="#profil">Profil <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#sejarah">Sejarah Desa</a></li>
+                                <li><a href="#visi-misi">Visi & Misi</a></li>
+                                <li><a href="#geografis">Kondisi Geografis</a></li>
+                                <li><a href="#demografi">Demografi</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#pemerintahan">Pemerintahan <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#struktur">Struktur Organisasi</a></li>
+                                <li><a href="#perangkat">Perangkat Desa</a></li>
+                                <li><a href="#bpd">BPD</a></li>
+                                <li><a href="#lembaga">Lembaga Desa</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#informasi">Informasi <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#berita">Berita Terkini</a></li>
+                                <li><a href="#pengumuman">Pengumuman</a></li>
+                                <li><a href="#agenda">Agenda Kegiatan</a></li>
+                                <li><a href="#peraturan">Peraturan Desa</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#layanan">Layanan <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#surat">Layanan Surat</a></li>
+                                <li><a href="#pengaduan">Pengaduan Online</a></li>
+                                <li><a href="#permohonan">Permohonan Bantuan</a></li>
+                                <li><a href="#konsultasi">Konsultasi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#transparansi">Transparansi</a></li>
+                        <li><a href="#potensi">Potensi Desa</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        <div class="search-container">
+            <input type="text" placeholder="Cari informasi..." class="search-input">
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="beranda">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1920x1080/?village,indonesia') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Selamat Datang di Portal Desa Sukamakmur</h1>
+                        <p class="hero-subtitle">Desa Maju, Sejahtera, dan Berkelanjutan</p>
+                        <div class="hero-buttons">
+                            <a href="#layanan" class="btn btn-primary">Layanan Online</a>
+                            <a href="#profil" class="btn btn-outline">Tentang Kami</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1920x1080/?farming,community') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Transparansi untuk Kemajuan Bersama</h1>
+                        <p class="hero-subtitle">Akses Informasi Anggaran dan Program Desa</p>
+                        <div class="hero-buttons">
+                            <a href="#transparansi" class="btn btn-primary">Lihat APBDes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1920x1080/?nature,green') center/cover;">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Potensi Desa yang Berkelanjutan</h1>
+                        <p class="hero-subtitle">Wisata, UMKM, dan Pertanian Modern</p>
+                        <div class="hero-buttons">
+                            <a href="#potensi" class="btn btn-primary">Jelajahi Potensi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-indicators"></div>
+    </section>
+
+    <!-- Quick Services -->
+    <section class="quick-services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Layanan Surat</h3>
+                    <p>Ajukan permohonan surat online</p>
+                    <a href="#surat" class="service-link">Akses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Pengaduan</h3>
+                    <p>Sampaikan aspirasi Anda</p>
+                    <a href="#pengaduan" class="service-link">Akses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Transparansi APBDes</h3>
+                    <p>Lihat anggaran desa</p>
+                    <a href="#transparansi" class="service-link">Akses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-newspaper"></i></div>
+                    <h3>Berita & Info</h3>
+                    <p>Update terkini desa</p>
+                    <a href="#berita" class="service-link">Akses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Agenda Kegiatan</h3>
+                    <p>Jadwal acara desa</p>
+                    <a href="#agenda" class="service-link">Akses <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3>Bantuan Sosial</h3>
+                    <p>Informasi bansos</p>
+                    <a href="#bansos" class="service-link">Akses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-count="5432">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Total Penduduk</p>
+                    </div>
+                </div>
+                <div class="stat-card" data-count="1256">
+                    <div class="stat-icon"><i class="fas fa-home"></i></div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Kepala Keluarga</p>
+                    </div>
+                </div>
+                <div class="stat-card" data-count="8">
+                    <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Dusun</p>
+                    </div>
+                </div>
+                <div class="stat-card" data-count="24">
+                    <div class="stat-icon"><i class="fas fa-building"></i></div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">RT/RW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="profil">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Tentang Kami</span>
+                <h2 class="section-title">Profil Desa Sukamakmur</h2>
+                <p class="section-desc">Desa dengan sejarah panjang dan komitmen untuk kemajuan bersama</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sejarah Singkat</h3>
+                    <p>Desa Sukamakmur didirikan pada tahun 1945, pasca kemerdekaan Indonesia. Nama "Sukamakmur" diambil dari harapan masyarakat untuk hidup dalam kemakmuran dan kesejahteraan. Desa ini terletak di kaki pegunungan dengan pemandangan alam yang indah dan udara yang sejuk.</p>
+                    
+                    <h3 class="mt-4">Visi Desa</h3>
+                    <p>"Terwujudnya Desa Sukamakmur yang Maju, Sejahtera, Mandiri, dan Religius Berbasis Pertanian dan Pariwisata pada Tahun 2030"</p>
+                    
+                    <h3 class="mt-4">Misi Desa</h3>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-check-circle"></i> Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan</li>
+                        <li><i class="fas fa-check-circle"></i> Mengembangkan potensi ekonomi lokal berbasis pertanian dan UMKM</li>
+                        <li><i class="fas fa-check-circle"></i> Memperbaiki infrastruktur dan sarana prasarana desa</li>
+                        <li><i class="fas fa-check-circle"></i> Meningkatkan pelayanan publik yang transparan dan akuntabel</li>
+                        <li><i class="fas fa-check-circle"></i> Mengembangkan pariwisata berbasis kearifan lokal</li>
+                    </ul>
+                    
+                    <div class="about-actions">
+                        <a href="#" class="btn btn-primary">Selengkapnya</a>
+                        <a href="#" class="btn btn-outline">Download Profil</a>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/600x800/?village,indonesia" alt="Desa Sukamakmur">
+                    <div class="image-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Tonton Video Profil Desa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Section -->
+    <section class="government-section" id="pemerintahan">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pemerintahan</span>
+                <h2 class="section-title">Struktur Pemerintahan Desa</h2>
+                <p class="section-desc">Aparatur desa yang siap melayani masyarakat</p>
+            </div>
+
+            <!-- Kepala Desa -->
+            <div class="kades-profile">
+                <div class="kades-image">
+                    <img src="https://via.placeholder.com/300x400/2c5aa0/ffffff?text=Kepala+Desa" alt="Kepala Desa">
+                </div>
+                <div class="kades-info">
+                    <h3>Sambutan Kepala Desa</h3>
+                    <h2>Bapak Sudirman, S.Sos</h2>
+                    <p class="position">Kepala Desa Sukamakmur</p>
+                    <p class="quote">"Assalamu'alaikum Warahmatullahi Wabarakatuh. Puji syukur kehadirat Allah SWT atas segala rahmat dan karunia-Nya. Website ini hadir sebagai wujud komitmen kami dalam memberikan pelayanan publik yang transparan dan akuntabel kepada seluruh masyarakat Desa Sukamakmur."</p>
+                    <p>"Mari bersama-sama kita bangun desa kita menjadi lebih maju dan sejahtera. Partisipasi aktif dari seluruh lapisan masyarakat sangat kami harapkan dalam setiap program pembangunan desa."</p>
+                    <div class="kades-contact">
+                        <a href="tel:+6281234567890"><i class="fas fa-phone"></i> +62 812-3456-7890</a>
+                        <a href="mailto:kades@sukamakmur.desa.id"><i class="fas fa-envelope"></i> kades@sukamakmur.desa.id</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Struktur Organisasi -->
+            <div class="org-structure">
+                <h3 class="text-center mb-4">Struktur Organisasi Pemerintah Desa</h3>
+                <div class="org-chart">
+                    <div class="org-level">
+                        <div class="org-card kepala-desa">
+                            <div class="org-photo">
+                                <img src="https://via.placeholder.com/100/2c5aa0/ffffff?text=KD" alt="Kepala Desa">
+                            </div>
+                            <h4>Sudirman, S.Sos</h4>
+                            <p>Kepala Desa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="org-level">
+                        <div class="org-card">
+                            <div class="org-photo">
+                                <img src="https://via.placeholder.com/100/4a90e2/ffffff?text=SK" alt="Sekretaris">
+                            </div>
+                            <h4>Ahmad Fauzi, S.IP</h4>
+                            <p>Sekretaris Desa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="org-level">
+                        <div class="org-row">
+                            <div class="org-card">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/100/27ae60/ffffff?text=KU" alt="Kaur">
+                                </div>
+                                <h4>Siti Nurhaliza</h4>
+                                <p>Kaur Umum</p>
+                            </div>
+                            <div class="org-card">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/100/27ae60/ffffff?text=KK" alt="Kaur">
+                                </div>
+                                <h4>Bambang Hermawan</h4>
+                                <p>Kaur Keuangan</p>
+                            </div>
+                            <div class="org-card">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/100/27ae60/ffffff?text=KP" alt="Kaur">
+                                </div>
+                                <h4>Dewi Lestari</h4>
+                                <p>Kaur Perencanaan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="org-level">
+                        <div class="org-row">
+                            <div class="org-card">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/100/f39c12/ffffff?text=KS" alt="Kasi">
+                                </div>
+                                <h4>Agus Setiawan</h4>
+                                <p>Kasi Pemerintahan</p>
+                            </div>
+                            <div class="org-card">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/100/f39c12/ffffff?text=KS" alt="Kasi">
+                                </div>
+                                <h4>Rini Kusumawati</h4>
+                                <p>Kasi Kesejahteraan</p>
+                            </div>
+                            <div class="org-card">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/100/f39c12/ffffff?text=KS" alt="Kasi">
+                                </div>
+                                <h4>Dedi Supriadi</h4>
+                                <p>Kasi Pelayanan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="org-level">
+                        <div class="org-row kadus-row">
+                            <div class="org-card small">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/80/e74c3c/ffffff?text=KD" alt="Kadus">
+                                </div>
+                                <h4>H. Usman</h4>
+                                <p>Kadus I</p>
+                            </div>
+                            <div class="org-card small">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/80/e74c3c/ffffff?text=KD" alt="Kadus">
+                                </div>
+                                <h4>Joko Susilo</h4>
+                                <p>Kadus II</p>
+                            </div>
+                            <div class="org-card small">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/80/e74c3c/ffffff?text=KD" alt="Kadus">
+                                </div>
+                                <h4>Sumarno</h4>
+                                <p>Kadus III</p>
+                            </div>
+                            <div class="org-card small">
+                                <div class="org-photo">
+                                    <img src="https://via.placeholder.com/80/e74c3c/ffffff?text=KD" alt="Kadus">
+                                </div>
+                                <h4>Hendra W.</h4>
+                                <p>Kadus IV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="berita">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Informasi</span>
+                <h2 class="section-title">Berita & Artikel Terkini</h2>
+                <p class="section-desc">Update terbaru seputar kegiatan dan program desa</p>
+            </div>
+
+            <div class="news-tabs">
+                <button class="news-tab active" data-tab="semua">Semua</button>
+                <button class="news-tab" data-tab="kegiatan">Kegiatan</button>
+                <button class="news-tab" data-tab="pembangunan">Pembangunan</button>
+                <button class="news-tab" data-tab="pengumuman">Pengumuman</button>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/800x500/?village,meeting" alt="Berita">
+                        <span class="news-badge">Featured</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Kegiatan</span>
+                            <span class="news-date"><i class="far fa-calendar"></i> 15 Jan 2026</span>
+                        </div>
+                        <h3 class="news-title">Musyawarah Desa Tahun 2026 Dihadiri 200 Warga</h3>
+                        <p class="news-excerpt">Musyawarah Desa (Musdes) tahun 2026 berlangsung sukses dengan dihadiri lebih dari 200 warga dari berbagai dusun. Acara membahas program prioritas pembangunan desa...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/600x400/?construction,road" alt="Berita">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Pembangunan</span>
+                            <span class="news-date"><i class="far fa-calendar"></i> 12 Jan 2026</span>
+                        </div>
+                        <h3 class="news-title">Pembangunan Jalan Desa Tahap II Dimulai</h3>
+                        <p class="news-excerpt">Pemerintah desa memulai pembangunan jalan desa tahap II sepanjang 2 kilometer yang menghubungkan Dusun III dengan pusat desa...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/600x400/?health,clinic" alt="Berita">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Kesehatan</span>
+                            <span class="news-date"><i class="far fa-calendar"></i> 10 Jan 2026</span>
+                        </div>
+                        <h3 class="news-title">Posyandu Balita Bulan Januari Terlaksana</h3>
+                        <p class="news-excerpt">Kegiatan Posyandu balita bulan Januari terlaksana dengan baik. Tercatat 85 balita hadir dan mendapat pelayanan kesehatan gratis...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/600x400/?farming,agriculture" alt="Berita">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Pertanian</span>
+                            <span class="news-date"><i class="far fa-calendar"></i> 8 Jan 2026</span>
+                        </div>
+                        <h3 class="news-title">Pelatihan Pertanian Modern untuk Petani</h3>
+                        <p class="news-excerpt">Dinas Pertanian mengadakan pelatihan pertanian modern dengan fokus pada teknik hidroponik dan organic farming...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/600x400/?children,education" alt="Berita">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Pendidikan</span>
+                            <span class="news-date"><i class="far fa-calendar"></i> 5 Jan 2026</span>
+                        </div>
+                        <h3 class="news-title">Program Beasiswa untuk Anak Kurang Mampu</h3>
+                        <p class="news-excerpt">Pemdes meluncurkan program beasiswa pendidikan untuk 50 anak dari keluarga kurang mampu di lingkungan desa...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/600x400/?clean,environment" alt="Berita">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Lingkungan</span>
+                            <span class="news-date"><i class="far fa-calendar"></i> 3 Jan 2026</span>
+                        </div>
+                        <h3 class="news-title">Gerakan Bersih Desa Serentak Dilaksanakan</h3>
+                        <p class="news-excerpt">Seluruh warga bergotong royong membersihkan lingkungan desa dalam gerakan bersih desa yang diadakan setiap bulan...</p>
+                        <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary">Lihat Semua Berita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section class="transparency-section" id="transparansi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Akuntabilitas</span>
+                <h2 class="section-title">Transparansi Anggaran Desa</h2>
+                <p class="section-desc">Keterbukaan informasi keuangan dan program desa</p>
+            </div>
+
+            <div class="apbd-summary">
+                <div class="apbd-card pendapatan">
+                    <div class="apbd-icon"><i class="fas fa-arrow-down"></i></div>
+                    <div class="apbd-info">
+                        <h4>Total Pendapatan</h4>
+                        <h2>Rp 2.456.000.000</h2>
+                        <p class="apbd-year">Tahun Anggaran 2026</p>
+                    </div>
+                </div>
+                
+                <div class="apbd-card belanja">
+                    <div class="apbd-icon"><i class="fas fa-arrow-up"></i></div>
+                    <div class="apbd-info">
+                        <h4>Total Belanja</h4>
+                        <h2>Rp 2.350.000.000</h2>
+                        <p class="apbd-year">Tahun Anggaran 2026</p>
+                    </div>
+                </div>
+                
+                <div class="apbd-card surplus">
+                    <div class="apbd-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="apbd-info">
+                        <h4>Surplus</h4>
+                        <h2>Rp 106.000.000</h2>
+                        <p class="apbd-year">Tahun Anggaran 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="budget-breakdown">
+                <h3>Rincian Anggaran Belanja</h3>
+                <div class="budget-items">
+                    <div class="budget-item">
+                        <div class="budget-header">
+                            <div class="budget-title">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Penyelenggaraan Pemerintahan Desa</span>
+                            </div>
+                            <span class="budget-amount">Rp 850.000.000</span>
+                        </div>
+                        <div class="budget-progress">
+                            <div class="progress-bar" style="width: 36%"></div>
+                        </div>
+                        <span class="budget-percent">36% dari total belanja</span>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-header">
+                            <div class="budget-title">
+                                <i class="fas fa-hammer"></i>
+                                <span>Pembangunan Infrastruktur</span>
+                            </div>
+                            <span class="budget-amount">Rp 750.000.000</span>
+                        </div>
+                        <div class="budget-progress">
+                            <div class="progress-bar" style="width: 32%"></div>
+                        </div>
+                        <span class="budget-percent">32% dari total belanja</span>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-header">
+                            <div class="budget-title">
+                                <i class="fas fa-users"></i>
+                                <span>Pembinaan Kemasyarakatan</span>
+                            </div>
+                            <span class="budget-amount">Rp 400.000.000</span>
+                        </div>
+                        <div class="budget-progress">
+                            <div class="progress-bar" style="width: 17%"></div>
+                        </div>
+                        <span class="budget-percent">17% dari total belanja</span>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-header">
+                            <div class="budget-title">
+                                <i class="fas fa-hands-helping"></i>
+                                <span>Pemberdayaan Masyarakat</span>
+                            </div>
+                            <span class="budget-amount">Rp 350.000.000</span>
+                        </div>
+                        <div class="budget-progress">
+                            <div class="progress-bar" style="width: 15%"></div>
+                        </div>
+                        <span class="budget-percent">15% dari total belanja</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary">Download Laporan Lengkap</a>
+                <a href="#" class="btn btn-outline">Lihat Grafik Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demographics Section -->
+    <section class="demographics-section" id="demografi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Data</span>
+                <h2 class="section-title">Demografi Penduduk</h2>
+                <p class="section-desc">Statistik dan informasi kependudukan desa</p>
+            </div>
+
+            <div class="demo-tabs">
+                <button class="demo-tab active" data-demo="umur">Berdasarkan Umur</button>
+                <button class="demo-tab" data-demo="pendidikan">Pendidikan</button>
+                <button class="demo-tab" data-demo="pekerjaan">Pekerjaan</button>
+                <button class="demo-tab" data-demo="agama">Agama</button>
+            </div>
+
+            <div class="demo-content">
+                <div class="demo-pane active" id="demo-umur">
+                    <div class="demo-grid">
+                        <div class="demo-card">
+                            <h4>0-5 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 12%"></div>
+                            </div>
+                            <p>654 jiwa (12%)</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>6-12 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 15%"></div>
+                            </div>
+                            <p>815 jiwa (15%)</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>13-18 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 14%"></div>
+                            </div>
+                            <p>760 jiwa (14%)</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>19-25 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 18%"></div>
+                            </div>
+                            <p>978 jiwa (18%)</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>26-40 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 25%"></div>
+                            </div>
+                            <p>1358 jiwa (25%)</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>41-60 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 12%"></div>
+                            </div>
+                            <p>652 jiwa (12%)</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>> 60 Tahun</h4>
+                            <div class="demo-bar">
+                                <div class="demo-fill" style="width: 4%"></div>
+                            </div>
+                            <p>215 jiwa (4%)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Potential Section -->
+    <section class="potential-section" id="potensi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Potensi</span>
+                <h2 class="section-title">Potensi Desa</h2>
+                <p class="section-desc">Kekayaan dan keunggulan desa yang dapat dikembangkan</p>
+            </div>
+
+            <div class="potential-grid">
+                <div class="potential-card">
+                    <div class="potential-image">
+                        <img src="https://source.unsplash.com/600x400/?waterfall,nature" alt="Wisata">
+                        <div class="potential-overlay">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                    </div>
+                    <div class="potential-content">
+                        <h3>Wisata Alam</h3>
+                        <p>Air terjun, pegunungan, dan pemandangan alam yang eksotis menjadi daya tarik wisatawan</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Air Terjun Curug Indah</li>
+                            <li><i class="fas fa-check"></i> Bukit Sunrise Point</li>
+                            <li><i class="fas fa-check"></i> Camping Ground</li>
+                        </ul>
+                        <a href="#" class="btn btn-sm">Jelajahi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="potential-card">
+                    <div class="potential-image">
+                        <img src="https://source.unsplash.com/600x400/?rice,field" alt="Pertanian">
+                        <div class="potential-overlay">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                    </div>
+                    <div class="potential-content">
+                        <h3>Pertanian</h3>
+                        <p>Lahan pertanian subur dengan hasil panen berkualitas tinggi</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Padi organik 500 Ha</li>
+                            <li><i class="fas fa-check"></i> Sayuran hidroponik</li>
+                            <li><i class="fas fa-check"></i> Perkebunan kopi</li>
+                        </ul>
+                        <a href="#" class="btn btn-sm">Jelajahi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="potential-card">
+                    <div class="potential-image">
+                        <img src="https://source.unsplash.com/600x400/?handicraft,traditional" alt="UMKM">
+                        <div class="potential-overlay">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="potential-content">
+                        <h3>UMKM & Kerajinan</h3>
+                        <p>Industri rumah tangga dan kerajinan tangan khas daerah</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Kerajinan bambu</li>
+                            <li><i class="fas fa-check"></i> Makanan olahan</li>
+                            <li><i class="fas fa-check"></i> Batik tulis</li>
+                        </ul>
+                        <a href="#" class="btn btn-sm">Jelajahi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="potential-card">
+                    <div class="potential-image">
+                        <img src="https://source.unsplash.com/600x400/?culture,tradition" alt="Budaya">
+                        <div class="potential-overlay">
+                            <i class="fas fa-drum"></i>
+                        </div>
+                    </div>
+                    <div class="potential-content">
+                        <h3>Seni & Budaya</h3>
+                        <p>Kearifan lokal dan tradisi yang masih lestari</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Tarian tradisional</li>
+                            <li><i class="fas fa-check"></i> Festival budaya</li>
+                            <li><i class="fas fa-check"></i> Musik angklung</li>
+                        </ul>
+                        <a href="#" class="btn btn-sm">Jelajahi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="layanan">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Layanan</span>
+                <h2 class="section-title">Layanan Administrasi Online</h2>
+                <p class="section-desc">Kemudahan akses layanan desa kapan saja, dimana saja</p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon-large">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>Permohonan Surat Keterangan</h3>
+                        <p>Ajukan berbagai jenis surat keterangan secara online tanpa perlu datang ke kantor desa</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Domisili</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Tidak Mampu</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Usaha</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Pengantar KTP/KK</li>
+                            <li><i class="fas fa-check-circle"></i> Dan 15+ jenis surat lainnya</li>
+                        </ul>
+                        <button class="btn btn-primary">Ajukan Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon-large">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>Pengaduan & Aspirasi Masyarakat</h3>
+                        <p>Sampaikan keluhan, saran, atau pertanyaan kepada pemerintah desa</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Respon cepat dalam 1x24 jam</li>
+                            <li><i class="fas fa-check-circle"></i> Tracking status pengaduan</li>
+                            <li><i class="fas fa-check-circle"></i> Privasi terjaga</li>
+                            <li><i class="fas fa-check-circle"></i> Notifikasi update via email/WA</li>
+                        </ul>
+                        <button class="btn btn-primary">Buat Pengaduan</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon-large">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>Permohonan Bantuan</h3>
+                        <p>Ajukan permohonan bantuan sosial, modal usaha, atau bantuan lainnya</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Bantuan Sosial</li>
+                            <li><i class="fas fa-check-circle"></i> Modal Usaha UMKM</li>
+                            <li><i class="fas fa-check-circle"></i> Bantuan Pendidikan</li>
+                            <li><i class="fas fa-check-circle"></i> Bantuan Kesehatan</li>
+                        </ul>
+                        <button class="btn btn-primary">Ajukan Bantuan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Dokumentasi</span>
+                <h2 class="section-title">Galeri Kegiatan</h2>
+                <p class="section-desc">Dokumentasi foto dan video kegiatan desa</p>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+                <button class="filter-btn" data-filter="pembangunan">Pembangunan</button>
+                <button class="filter-btn" data-filter="wisata">Wisata</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="kegiatan">
+                    <img src="https://source.unsplash.com/400x300/?meeting,village" alt="Galeri">
+                    <div class="gallery-overlay">
+                        <h4>Musyawarah Desa 2026</h4>
+                        <p>15 Januari 2026</p>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pembangunan">
+                    <img src="https://source.unsplash.com/400x300/?construction,road" alt="Galeri">
+                    <div class="gallery-overlay">
+                        <h4>Pembangunan Jalan Desa</h4>
+                        <p>10 Januari 2026</p>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kegiatan">
+                    <img src="https://source.unsplash.com/400x300/?health,children" alt="Galeri">
+                    <div class="gallery-overlay">
+                        <h4>Posyandu Balita</h4>
+                        <p>8 Januari 2026</p>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wisata">
+                    <img src="https://source.unsplash.com/400x300/?waterfall,tourism" alt="Galeri">
+                    <div class="gallery-overlay">
+                        <h4>Wisata Air Terjun</h4>
+                        <p>5 Januari 2026</p>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kegiatan">
+                    <img src="https://source.unsplash.com/400x300/?gotong-royong,clean" alt="Galeri">
+                    <div class="gallery-overlay">
+                        <h4>Gotong Royong Bersih Desa</h4>
+                        <p>3 Januari 2026</p>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pembangunan">
+                    <img src="https://source.unsplash.com/400x300/?building,construction" alt="Galeri">
+                    <div class="gallery-overlay">
+                        <h4>Balai Desa Baru</h4>
+                        <p>1 Januari 2026</p>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-primary">Lihat Lebih Banyak</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="kontak">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Hubungi Kami</span>
+                <h2 class="section-title">Kontak & Lokasi</h2>
+                <p class="section-desc">Kami siap membantu dan melayani Anda</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <h3>Kantor Desa Sukamakmur</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Raya Desa No. 123, Desa Sukamakmur<br>Kec. Cianjur Selatan, Kab. Cianjur<br>Jawa Barat 43281</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>+62 812-3456-7890<br>+62 263-123456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@sukamakmur.desa.id<br>pemdes@sukamakmur.desa.id</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Layanan</h4>
+                                <p>Senin - Kamis: 08.00 - 16.00 WIB<br>Jumat: 08.00 - 11.30 WIB<br>Sabtu - Minggu: Tutup</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Media Sosial</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Kirim Pesan</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="No. Telepon" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Pilih Subjek</option>
+                                <option>Pertanyaan</option>
+                                <option>Saran</option>
+                                <option>Pengaduan</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>Peta Lokasi</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56211042!2d107.1234!3d-6.8123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDgnNDQuMyJTIDEwN8KwMDcnMjQuMiJF!5e0!3m2!1sid!2sid!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <img src="https://via.placeholder.com/80x80/ffffff/2c5aa0?text=LOGO" alt="Logo">
+                            <h3>Desa Sukamakmur</h3>
+                        </div>
+                        <p>Desa yang maju, sejahtera, dan berkelanjutan dengan komitmen pada transparansi dan pelayanan publik yang berkualitas.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Profil Desa</h4>
+                        <ul class="footer-links">
+                            <li><a href="#sejarah">Sejarah</a></li>
+                            <li><a href="#visi-misi">Visi & Misi</a></li>
+                            <li><a href="#geografis">Geografis</a></li>
+                            <li><a href="#demografi">Demografi</a></li>
+                            <li><a href="#struktur">Struktur Organisasi</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Layanan</h4>
+                        <ul class="footer-links">
+                            <li><a href="#surat">Layanan Surat</a></li>
+                            <li><a href="#pengaduan">Pengaduan Online</a></li>
+                            <li><a href="#bantuan">Permohonan Bantuan</a></li>
+                            <li><a href="#konsultasi">Konsultasi</a></li>
+                            <li><a href="#informasi">Informasi Publik</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Statistik Kunjungan</h4>
+                        <div class="visitor-stats">
+                            <div class="stat-row">
+                                <span>Hari Ini</span>
+                                <strong>124</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Kemarin</span>
+                                <strong>189</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Minggu Ini</span>
+                                <strong>1,234</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Bulan Ini</span>
+                                <strong>4,567</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Total Kunjungan</span>
+                                <strong>45,678</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 Desa Sukamakmur. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="complete-script.js"></script>
+</body>
+</html>
